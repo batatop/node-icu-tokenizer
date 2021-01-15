@@ -39,12 +39,14 @@
           '_FILE_OFFSET_BITS=64'
         ],
         'libraries': [
-          '<(module_root_dir)/lib/icudt.lib', 
-          '<(module_root_dir)/lib/icuin.lib', 
-          '<(module_root_dir)/lib/icuio.lib', 
-          '<(module_root_dir)/lib/icutest.lib', 
-          '<(module_root_dir)/lib/icutu.lib', 
-          '<(module_root_dir)/lib/icuuc.lib',
+          '<(module_root_dir)/lib/libicudata.so.60', 
+          '<(module_root_dir)/lib/libicui18n.so.60', 
+          '<(module_root_dir)/lib/libicuio.so.60', 
+          # '<(module_root_dir)/lib/libicule.so.60', 
+          '<(module_root_dir)/lib/libiculx.so.60', 
+          '<(module_root_dir)/lib/libicutu.so.60', 
+          '<(module_root_dir)/lib/libicuuc.so.60',
+          '-Wl,-s -Wl,--disable-new-dtags -Wl,-rpath=\'$${ORIGIN}/../../lib/\''
         ],
        
         'msvs_disabled_warnings': [
