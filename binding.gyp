@@ -45,8 +45,7 @@
           # '<(module_root_dir)/lib/libicule.so.60', 
           '<(module_root_dir)/lib/libiculx.so.60', 
           '<(module_root_dir)/lib/libicutu.so.60', 
-          '<(module_root_dir)/lib/libicuuc.so.60',
-          '-Wl,-s -Wl,--disable-new-dtags -Wl,-rpath=\'$${ORIGIN}/../../lib/\''
+          '<(module_root_dir)/lib/libicuuc.so.60'
         ],
        
         'msvs_disabled_warnings': [
